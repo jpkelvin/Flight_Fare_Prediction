@@ -3,6 +3,12 @@ from flask_cors import cross_origin
 import sklearn
 import pickle
 import pandas as pd
+import logging
+
+logging.basicConfig(filename="logs.txt",
+                    filemode='a',
+                    format='%(asctime)s %(levelname)s-%(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S')
 
 app = Flask(__name__)
 model = pickle.load(open("flight_rf.pkl", "rb"))
