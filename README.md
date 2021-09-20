@@ -75,7 +75,7 @@ Follow the instruction given on [Heroku Documentation](https://devcenter.heroku.
 
 ## Detailed Project Reports
  ```
- link : https://drive.google.com/drive/folders1FX0wJvoAn0aRRl7v0YPIsthDLkdpM2BM?usp=sharing"
+ https://drive.google.com/drive/folders1FX0wJvoAn0aRRl7v0YPIsthDLkdpM2BM?usp=sharing
  ```
 
 ## Bugs & Logs
