@@ -63,12 +63,13 @@ Follow the instruction given on [Heroku Documentation](https://devcenter.heroku.
 │   ├── styles.css
 ├── templates
 │   ├── home.html
-├── app.py
 ├── Flight_Fare_Prediction.ipynb
-├── flight_price_rf.pkl
 ├── LICENSE
 ├── Procfile
 ├── README.md
+├── app.py
+├── flight_price_rf.pkl
+├── logs.txt
 ├── requirements.txt
 
 ```
