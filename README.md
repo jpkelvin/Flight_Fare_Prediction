@@ -32,7 +32,7 @@ Model Building & Testing : Tried many machine learning algorithms and checked th
 Pickle File : Selected model as per best accuracy and created pickle file.
 
 User Interface & deployment :  Created an UI with a form that takes all the necessary inputs from user and shows the output.
-                          *After that I have deployed project on heroku.*
+                          After that I have deployed project on heroku.
 ## Technologies Used
  
    1. Python 
