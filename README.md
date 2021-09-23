@@ -14,7 +14,7 @@ The main goal of this project is to predict the fares of the flights based on di
   * [Contributors](#contributors)
 
 ## Demo
-Link: [https://flightprice-predict.herokuapp.com/](https://flight-price-prediction-api.herokuapp.com/)
+Link: [https://flightprice-predict.herokuapp.com/](https://flightprice-predict.herokuapp.com/)
 
 ## Problem Statement
 Travelling through flights has become an integral part of today’s lifestyle as more and more people are opting for faster travelling options. The flight ticket prices increase or decrease every now and then depending on various factors like timing of the flights, destination, and duration of flights various occasions such as vacations or festive season. Therefore, having some basic idea of the flight fares before planning the trip will
