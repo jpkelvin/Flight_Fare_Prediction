@@ -8,63 +8,106 @@
     <!-- css -->
     <link rel="stylesheet" href="static/styles.css">
 
-
-
     <title>Document</title>
 </head>
-<body>
+<style>
+img:hover {
+  animation: shake 0.1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+
+<style>
+.header{
+padding:5px;
+padding-right: 50px;
+padding-left: 50px;
+text-align:left;
+background: #99ff99;
+color: blue;
+font size: 20px;
+}</style>
+<div class="header">
+<marquee direction="center"<h4><span style='font-size:20px;'>&#128640;</span>iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron______<span style='font-size:20px;'>&#127759;</span>____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron______<span style='font-size:20px;'>&#127759;</span>____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron_____<span style='font-size:20px;'>&#127759;</span>_____iNueron</h4></marquee>
+</div>
+<body style="background-image:url('static/images/bg.jpg');background-size: cover;"style="width:800px;height:800px"> 
     <!-- As a heading -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">FLIGHT PRICE</a>
-            </div>
-        </div>
-    </nav>
+<span style='font-size:50px;'>&#128304;</span><img src="https://account.ineuron.ai/static/images/ineuron-logo.png" alt="inueron.ai"style="width:300px;height:100px;">
+<img src="static/images/names.png" alt="authors.com"style="width:150px;height:120px;"align="right">
+<br>
+<br>
+<marquee direction="right"><span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span></marquee><br>
+<br>
+<h3>{{ prediction_text }}</h3>
+<br><p><h1 class="glow"><u>FLIGHT FARE PREDICTOR</u></h1><img src="static/images/namaste.png" alt="namaste.com"style="width:130px;height:150px;""align="left"></p>
+<br>
+<style>
+body {
+ 
+  font-family: cursive;
+}
 
-    <br><br><br>
+.glow {
+  font-size: 60px;
+  color: #000;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
 
-    <div class="container">
-
-
-
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ffff00;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #ffff00, 0 0 30px #ffff00, 0 0 40px #ffff00, 0 0 50px #ffff00, 0 0 60px #ffff00, 0 0 70px #ffff00, 0 0 80px #000, 0 0 90px #0000;
+  }
+}
+</style>
+</body>
+  <div class="container">
+   <center>
         <form action="\predict" method="post">
-
-
-            <div class="row">
-                <div class="col-sm-6">
+            <div class="row"><h1 class="glow"><span style='font-size:50px;'>&#128197;</span></h1>
+                <div class="col-sm-4">
                     <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Departure Date</h5>
+                        <div class="card-body"><center>
+                            <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><i>Departure Date</i></h5>
                             <!-- Departure -->
-                            <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
+                            <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required"></center>
                         </div>
                     </div>
-                </div>
+                </div><h1 class="glow"><span style='font-size:50px;'>&#128197;</span></h1>
                 <br>
                 <br>
                 <br>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Arrival Date</h5>
+                            <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><t><i>Arrival Date</i></h5>
                             <!-- Arrival -->
                             <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
                         </div>
                     </div>
                 </div>
             </div>
-
             <br>
             <br>
-            <br>
-
-            <div class="row">
-                <div class="col-sm-6">
+            <div class="row"><h1 class="glow"><span style='font-size:50px;'>&#128640;</span></h1>
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
                             <!-- Source -->
-                            <h5 class="card-title">Source</h5>
+                            <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><i>Source</i></h5>
                             <select name="Source" id="Source" required="required">
                                 <option value="Delhi">Delhi</option>
                                 <option value="Kolkata">Kolkata</option>
@@ -74,11 +117,11 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
+                </div><h1 class="glow"><span style='font-size:50px;'>&#128640;</span></h1>
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Destination</h5>
+                            <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><i>Destination</i></h5>
                             <!-- Destination -->
                             <select name="Destination" id="Destination" required="required">
                                 <option value="Cochin">Cochin</option>
@@ -92,18 +135,13 @@
                     </div>
                 </div>
             </div>
-
-
-
             <br>
             <br>
-            <br>
-
-            <div class="row">
-                <div class="col-sm-6">
+            <div class="row"><h1 class="glow"><span style='font-size:50px;'>&#9940;</span></h1>
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Stopage</h5>
+                            <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><i>Number of stops</i></h5>
                             <!-- Total Stops -->
                             <select name="stops" required="required">
                                 <option value="0">Non-Stop</option>
@@ -114,13 +152,17 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
+                </div><h1 class="glow"><span style='font-size:50px; margin: 12px;'>&#10067;</span></h1>
+                <br>
+                <br>
+                <br>
+
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Which Airline you want to travel?</h5>
+                            <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><i>Airline you wish to travel?</i></h5>
                             <!-- Airline -->
-                            <select name="airline" id="airline" required="required">
+                            <select name="airline" id="airline" required="required" style="width: 250px; height: 30px;">
                                 <option value="Jet Airways">Jet Airways</option>
                                 <option value="IndiGo">IndiGo</option>
                                 <option value="IndiGo">IndiGo</option>
@@ -142,25 +184,88 @@
             </div>
 
 
-
             <br>
             <br>
             <br>
             <!-- Submit -->
-            <input type="submit" value="Submit" class="btn btn-secondary">
+<input type="submit" value="Submit" class="btn btn-primary">
+
+           
         </form>
 
-        <br>
-        <br>
-        <h3>{{ prediction_text }}</h3>
-
-        <br>
-        <br>
-       
+    </center>   
 
     </div>
+<style>
+footer {
+  padding:8px 0;
+  background-color:#ffccff;
+  color: black;
+padding-left: 30px;
+padding-right: 30px;
+ 
+}
+</style>
+
+<div class="footer-basic">
+        <footer>
+
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#"><span style='font-size:20px;'>&#127968;</span><u>Home</u></a></li>
+                <li class="list-inline-item"><a href="#"><span style='font-size:20px;'>&#127760;</span><u>About</u></a></li>
+                <li class="list-inline-item"><a href="#"><span style='font-size:20px;'>&#128172;</span><u>Privacy Policy</u></a></li>
+            </ul>
+            <div class="row">
+                <div class="col-sm-4">
+            <p><a href="https://github.com/jpkelvin/Flight_Fare_Prediction"<span style='font-size:20px;'>&#128204;</span>xxxx@github.com</a></p>
+            <p><u><b><span style='font-size:20px;'>&#128101;</span>Authors:</b></u><br><span style='font-size:20px;'>&#128102;</span>J Prince Kelvin<br><span style='font-size:20px;'>&#128105;</span>Sandra V<br><span style='font-size:20px;'>&#128102;</span>Sreerang R<br></p>
+            </div>
+            </div>
+            <h4><p class="copyright">Flightfarepredictor © 2021</p><h4>
+        </footer>
+    </div>
+<div class="footer">
+<footer>
+<p><center>*This website is built based on sample data provided for project purposes. Not to be consider for any sort of evaluation.*</center></p>
+</footer></div>
+<style>
+.footer-basic {
+  padding:40px 0;
+  background-color:00ccff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:right;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+padding-left: 30px;
+}
+
+.footer-basic li {
+  padding:0 10px;
+padding-left: 30px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
 
 
+
+.footer-basic .copyright {
+  margin-top:12px;
+  text-align:center;
+  font-size:20px;
+  color:#001;
+  margin-bottom:5;
+}
+</style>
 
 
     <!-- JavaScript -->
