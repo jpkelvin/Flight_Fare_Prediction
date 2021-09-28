@@ -16,6 +16,9 @@ The main goal of this project is to predict the fares of the flights based on di
 ## Demo
 Link: [https://flightprice-predict.herokuapp.com/](https://flightprice-predict.herokuapp.com/)
 ![image](https://user-images.githubusercontent.com/63100086/135015307-22fb5e2b-9753-42ba-9716-23a6f145ec3c.png)
+![image1](https://user-images.githubusercontent.com/63100086/135015834-6babff17-39aa-4516-8471-dfb5a3d82083.png)
+![image2](https://user-images.githubusercontent.com/63100086/135015891-36209d42-586c-48ea-832a-8434d28eaab3.png)
+
 
 
 ## Problem Statement
