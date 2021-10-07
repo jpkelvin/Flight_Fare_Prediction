@@ -8,7 +8,6 @@ The main goal of this project is to predict the fares of the flights based on di
   * [Technologies Used](#technologies-used)
   * [Installation](#installation)
   * [Deployement on Heroku](#deployement-on-heroku)
-  * [Directory Tree](#directory-tree)
   * [Detailed Project Reports](#detailed-project-reports)
   * [Bugs & Logs](#bugs--logs)
   * [Contributors](#contributors)
@@ -54,25 +53,6 @@ If pip is not already installed, Follow this [link](https://pip.pypa.io/en/stabl
 Create a virtual app on Heroku website. You can either connect your github profile or download cli to manually deploy this project.
 Follow the instruction given on [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python) to deploy a web app.
 
-## Directory Tree 
-```
-├── datasets 
-│   ├── Data_Train.xlsx
-│   ├── Test_set.xlsx
-├── static 
-│   ├── styles.css
-├── templates
-│   ├── home.html
-├── Flight_Fare_Prediction.ipynb
-├── LICENSE
-├── Procfile
-├── README.md
-├── app.py
-├── flight_price_rf.pkl
-├── logs.txt
-├── requirements.txt
-
-```
 
 ## Detailed Project Reports
  ```
