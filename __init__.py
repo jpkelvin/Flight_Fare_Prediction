@@ -1,16 +1,24 @@
 from flask import Flask,render_template
 from flask_cors import cross_origin
-import logging
+import warnings
+# All Necessary Library Imports
+from CustomLogger.logger import Logger
+from flask import Flask,render_template
+from forms import SignUpForm
 
-logging.basicConfig(filename="logs.txt",
-                    filemode='a',
-                    format='%(asctime)s %(levelname)s-%(message)s',
-                    datefmt='%Y-%m-%d %H:%M:%S')
+# Flask App and Secret Key
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'SECRET_KEY'
+
+logging = Logger('logFiles/test.log')
+
+warnings.filterwarnings('ignore')
+
 
 from predict import Predict
 
 @app.route("/")
 @cross_origin()
 def home():
-    return render_template("home.html")
+    form = SignUpForm()
+    return render_template("home.html",form=form)

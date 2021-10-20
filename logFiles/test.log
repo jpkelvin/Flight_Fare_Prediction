@@ -1,0 +1,33 @@
+21-10-2021 00:36:29,INFO,POST Method is requested
+21-10-2021 00:36:39,INFO,Model which is in Pickle format is loaded
+21-10-2021 00:36:40,INFO,Data is Converted 
+21-10-2021 00:36:40,INFO,Threading Called !
+21-10-2021 00:36:40,INFO,Threading Created !
+21-10-2021 00:36:40,INFO,Data is received  : {'Departure_Date': '2021-10-21T00:36', 'Destination_Date': '2021-10-21T06:42', 'Source': 'Banglore', 'Destination': 'Delhi', 'Total_Stops': 'non-stop', 'Airline': 'IndiGo'}
+21-10-2021 00:36:40,INFO,Threading Started !
+21-10-2021 00:36:40,INFO,Data Cleaned : {}
+21-10-2021 00:36:40,INFO,Data scaled and sent for prediction
+21-10-2021 00:36:40,INFO,Threading join !
+21-10-2021 00:36:40,INFO,Prediction is done successfully!
+21-10-2021 00:36:40,INFO,Output displayed!
+21-10-2021 00:36:51,INFO,POST Method is requested
+21-10-2021 00:36:51,INFO,Model which is in Pickle format is loaded
+21-10-2021 00:36:51,INFO,Data is Converted 
+21-10-2021 00:36:57,INFO,POST Method is requested
+21-10-2021 00:36:57,INFO,Model which is in Pickle format is loaded
+21-10-2021 00:36:57,INFO,Data is Converted 
+21-10-2021 00:36:57,INFO,Threading Called !
+21-10-2021 00:36:57,INFO,Threading Created !
+21-10-2021 00:36:57,INFO,Threading Started !
+21-10-2021 00:36:57,INFO,Data is received  : {'Departure_Date': '2021-10-21T00:36', 'Destination_Date': '2021-10-21T06:42', 'Source': 'Banglore', 'Destination': 'Cochin', 'Total_Stops': 'non-stop', 'Airline': 'IndiGo'}
+21-10-2021 00:36:57,INFO,Data Cleaned : {}
+21-10-2021 00:36:57,INFO,Data scaled and sent for prediction
+21-10-2021 00:36:57,INFO,Threading join !
+21-10-2021 00:36:57,INFO,Prediction is done successfully!
+21-10-2021 00:36:57,INFO,Output displayed!
+21-10-2021 00:37:06,INFO,POST Method is requested
+21-10-2021 00:37:06,INFO,Model which is in Pickle format is loaded
+21-10-2021 00:37:06,INFO,Data is Converted 
+21-10-2021 00:37:10,INFO,POST Method is requested
+21-10-2021 00:37:10,INFO,Model which is in Pickle format is loaded
+21-10-2021 00:37:10,INFO,Data is Converted 

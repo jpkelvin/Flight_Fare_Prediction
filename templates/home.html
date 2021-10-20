@@ -42,7 +42,7 @@ font size: 20px;
 <body style="background-image:url('static/images/bg.jpg');background-size: cover;"style="width:800px;height:800px"> 
     <!-- As a heading -->
 <span style='font-size:50px;'>&#128304;</span><img src="https://account.ineuron.ai/static/images/ineuron-logo.png" alt="inueron.ai"style="width:300px;height:100px;">
-<img src="static/images/names.PNG" alt="authors.com"style="width:150px;height:120px;"align="right">
+<img src="static/images/names.png" alt="authors.com"style="width:150px;height:120px;"align="right">
 <br>
 <br>
 <marquee direction="right"><span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span>------------<span style='font-size:50px;'>&#9992;</span></marquee><br>
@@ -83,7 +83,7 @@ body {
                         <div class="card-body"><center>
                             <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><i>Departure Date</i></h5>
                             <!-- Departure -->
-                            <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required"></center>
+                            <p>{{ form.Departure_Date()}} </p>
                         </div>
                     </div>
                 </div><h1 class="glow"><span style='font-size:50px;'>&#128197;</span></h1>
@@ -95,7 +95,7 @@ body {
                         <div class="card-body">
                             <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><t><i>Arrival Date</i></h5>
                             <!-- Arrival -->
-                            <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
+                            <p>{{ form.Destination_Date()}} </p>
                         </div>
                     </div>
                 </div>
@@ -108,13 +108,7 @@ body {
                         <div class="card-body">
                             <!-- Source -->
                             <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><i>Source</i></h5>
-                            <select name="Source" id="Source" required="required">
-                                <option value="Delhi">Delhi</option>
-                                <option value="Kolkata">Kolkata</option>
-                                <option value="Mumbai">Mumbai</option>
-                                <option value="Chennai">Chennai</option>
-                                <option value="Bangalore">Bangalore</option>
-                            </select>
+                            <p>{{ form.Source()}} </p>
                         </div>
                     </div>
                 </div><h1 class="glow"><span style='font-size:50px;'>&#128640;</span></h1>
@@ -123,14 +117,7 @@ body {
                         <div class="card-body">
                             <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><i>Destination</i></h5>
                             <!-- Destination -->
-                            <select name="Destination" id="Destination" required="required">
-                                <option value="Cochin">Cochin</option>
-                                <option value="Delhi">Delhi</option>
-                                <option value="New Delhi">New Delhi</option>
-                                <option value="Hyderabad">Hyderabad</option>
-                                <option value="Kolkata">Kolkata</option>
-                                <option value="Bangalore">Bangalore</option>
-                            </select>
+                            <p>{{ form.Destination()}} </p>
                         </div>
                     </div>
                 </div>
@@ -143,13 +130,7 @@ body {
                         <div class="card-body">
                             <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><i>Number of stops</i></h5>
                             <!-- Total Stops -->
-                            <select name="stops" required="required">
-                                <option value="0">Non-Stop</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
+                            <p>{{ form.Total_Stops()}} </p>
                         </div>
                     </div>
                 </div><h1 class="glow"><span style='font-size:50px; margin: 12px;'>&#10067;</span></h1>
@@ -162,22 +143,7 @@ body {
                         <div class="card-body">
                             <h5 class="card-title"><span style='font-size:20px;'>&#9992;</span><i>Airline you wish to travel?</i></h5>
                             <!-- Airline -->
-                            <select name="airline" id="airline" required="required" style="width: 250px; height: 30px;">
-                                <option value="Jet Airways">Jet Airways</option>
-                                <option value="IndiGo">IndiGo</option>
-                                <option value="IndiGo">IndiGo</option>
-                                <option value="Air India">Air India</option>
-                                <option value="Multiple carriers">Multiple carriers</option>
-                                <option value="SpiceJet">SpiceJet</option>
-                                <option value="Vistara">Vistara</option>
-                                <option value="Air Asia">Air Asia</option>
-                                <option value="GoAir">GoAir</option>
-                                <option value="Multiple carriers Premium economy">Multiple carriers Premium economy
-                                </option>
-                                <option value="Jet Airways Business">Jet Airways Business</option>
-                                <option value="Vistara Premium economy">Vistara Premium economy</option>
-                                <option value="Trujet">Trujet</option>
-                            </select>
+                            <p>{{ form.Airline(class_='airline')}} </p>
                         </div>
                     </div>
                 </div>
@@ -197,6 +163,9 @@ body {
 
     </div>
 <style>
+.airline{
+    width: 250px; height: 30px;   
+}
 footer {
   padding:8px 0;
   background-color:#ffccff;
@@ -217,7 +186,7 @@ padding-right: 30px;
             </ul>
             <div class="row">
                 <div class="col-sm-4">
-            <p><a href="https://github.com/jpkelvin/Flight_Fare_Prediction"<span style='font-size:20px;color:black;'>&#128204;</span>xxxx@github.com</a></p>
+            <p><a href="https://github.com/jpkelvin/Flight_Fare_Prediction"<span style='font-size:20px;'>&#128204;</span>xxxx@github.com</a></p>
             <p><u><b><span style='font-size:20px;'>&#128101;</span>Authors:</b></u><br><span style='font-size:20px;'>&#128102;</span>J Prince Kelvin<br><span style='font-size:20px;'>&#128105;</span>Sandra V<br><span style='font-size:20px;'>&#128102;</span>Sreerang R<br></p>
             </div>
             </div>
